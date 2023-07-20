@@ -78,6 +78,7 @@ fun DesktopView(lists: AppInfoBaseBean, viewModel: HomeViewModel, version:Mutabl
                 .offset(
                     (width.dp - indicationDot.dp) / 2, (height - 150).dp
                 )
+
     ) {
         homeList.forEachIndexed { index, arrayList ->
             Box(
@@ -151,7 +152,7 @@ fun DesktopView(lists: AppInfoBaseBean, viewModel: HomeViewModel, version:Mutabl
                         modifier = Modifier
                                 .width(width = width.dp)
                                 .height(height = height.dp)
-                                .offset(0.dp, 0.dp)
+                                .offset(0.dp, 20.dp)
 
                     ) {
                         MyBasicColumn() {

@@ -85,8 +85,9 @@ fun IconViewDetail(it: ApplicationInfo,showText: Boolean=true){
         Image(
             painter = icon,
             contentDescription = it.pageName,
-            modifier = Modifier.size(it.iconWidth.dp, it.iconHeight.dp)
+            modifier = Modifier.size(it.iconWidth.dp+50.dp, it.iconHeight.dp+180.dp)
                     .clip(RoundedCornerShape(8.dp))
+
         )
        }
     }else if(it.appType==LauncherConfig.CELL_TYPE_FOLD){
@@ -112,8 +113,9 @@ fun IconViewDetail(it: ApplicationInfo,showText: Boolean=true){
             text = it.name ?: "",
             overflow = TextOverflow.Ellipsis,
             maxLines = 1,
-            fontSize = 13.sp,
+            fontSize = 30.sp,
             modifier = Modifier.padding(4.dp, 10.dp, 4.dp, 0.dp)
+
         )
     }
 }
